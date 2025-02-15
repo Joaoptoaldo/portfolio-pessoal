@@ -1,0 +1,16 @@
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #00ffff;
+    --cor-quaternaria: #9400d3;
+    --cor-hover: #272727;
+
+    --fonte-titulo: 'Krona One', sans-serif;
+    --fonte-texto: 'Montserrat', sans-serif;
+    --fonte-citacao: 'Wix Madefor Display', sans-serif;
+
+    --fonte-tamanho-titulo: 2.25rem;
+    --fonte-tamanho-subtitulo: 2.18rem;
+    --fonte-tamanho-texto: 1.5rem;
+    --fonte-citacao-tamanho: 1.4rem;
+}

@@ -1,0 +1,23 @@
+@import url(style.css);
+
+.rodape {
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-texto);
+    font-size: var(--fonte-tamanho-texto);
+    font-weight: 400;
+}
+
+@media (max-width: 800px) {
+    .rodape {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rodape {
+        font-size: 22px;
+    }
+}

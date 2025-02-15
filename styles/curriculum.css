@@ -1,0 +1,262 @@
+@import url(style.css);
+
+.curriculo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+    padding: 8%;
+}
+
+.curriculo__informacoes {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.curriculo__informacoes__foto {
+    width: 17%;
+    position: absolute;
+    left: 80%;
+    border-radius: 5px;
+}
+
+.curriculo__informacoes__contato {
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+    font-size: var(--fonte-tamanho-texto);
+}
+
+.curriculo__informacoes__nome {
+    font-size: var(--fonte-tamanho-titulo);
+    font-family: var(--fonte-titulo);
+}
+
+.curriculo__informacoes__cargo {
+    font-size: var(--fonte-tamanho-subtitulo);
+    font-family: var(--fonte-texto);
+}
+
+.curriculo__informacoes__cidade {
+    font-size: var(--fonte-tamanho-texto);
+    font-family: var(--fonte-texto);
+}
+
+.curriculo__informacoes__contatos {
+    display: flex;
+    font-size: var(--fonte-tamanho-texto);
+    font-family: var(--fonte-texto);
+    gap: 0 10px;
+}
+
+.curriculo__informacoes__contatos__contato, .curriculo__tecnologias__lista__tecnologia {
+    list-style-type: none;
+}
+
+.curriculo__informacoes__contatos__contato:hover {
+    transform: scale(1.1);
+}
+
+.curriculo__experiencias__experiencia {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+}
+
+.curriculo__experiencias__experiencia__imagem {
+    width: 40%;
+    border-radius: 5px;
+}
+
+.curriculo__experiencias__experiencia__titulo, 
+.curriculo__formacao__titulo, 
+.curriculo__tecnologias__titulo {
+    font-size: var(--fonte-tamanho-titulo);
+    margin: 4% 0%;
+    font-family: var(--fonte-titulo);
+}
+
+.curriculo__experiencias__experiencia__subtitulo {
+    font-size: var(--fonte-tamanho-subtitulo);
+    margin-bottom: 2%;
+    font-family: var(--fonte-texto);
+}
+
+.destaque {
+    font-weight: bold;
+    color: var(--cor-terciaria);
+}
+
+.curriculo__experiencias__experiencia__projeto, 
+.curriculo__experiencias__experiencia__projeto, 
+.curriculo__experiencias__experiencia__descricao, 
+.curriculo__experiencias__experiencia__data, 
+.curriculo__formacao__subtitulo,
+.curriculo__formacao__curso,
+.curriculo__formacao__projeto,
+.curriculo__formacao__descricao,
+.curriculo__formacao__data {
+    font-size: var(--fonte-tamanho-texto);
+    margin-bottom: 1%;
+    font-family: var(--fonte-texto);
+}
+
+
+.curriculo__experiencias__experiencia__botoes {
+    display: flex;
+    margin-top: 2%;
+    gap: 0 30px;
+}
+
+.curriculo__experiencias__experiencia__botoes__teste,
+.curriculo__experiencias__experiencia__botoes__repositorio {
+    margin-top: 3%;
+    text-decoration: none;
+    border: 2px solid var(--cor-terciaria);
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    color: var(--cor-secundaria);
+    font-size: var(--fonte-tamanho-texto);
+    font-family: var(--fonte-texto);
+}
+
+.curriculo__experiencias__experiencia__botoes__teste:hover,
+.curriculo__experiencias__experiencia__botoes__repositorio:hover {
+    background-color: var(--cor-hover);
+    border-color: var(--cor-quaternaria);
+}
+
+.curriculo__tecnologias__lista {
+    display: flex;
+    gap: 0 8px;
+}
+
+.curriculo__tecnologias__subtitulo {
+    font-family: var(--fonte-texto);
+    font-size: var(--fonte-tamanho-texto);
+    margin: 2% 0;
+}
+
+.curriculo__tecnologias__lista__tecnologia:hover {
+    transform: scale(1.1);
+}
+
+.curriculo__tecnologias__lista__tecnologia__icone {
+    height: 64px;
+}
+
+@media (max-width: 800px) {
+    .curriculo {
+        padding: 7% 3%;
+    }
+
+    .curriculo__informacoes__nome {
+        font-size: 30px;
+    }
+
+    .curriculo__informacoes__cargo,
+    .curriculo__informacoes__cidade,
+    .curriculo__informacoes__contato,
+    .curriculo__experiencias__experiencia__subtitulo {
+        font-size: 26px;
+    }
+
+    .curriculo__informacoes__foto {
+        display: none;
+    }
+
+    .curriculo__informacoes__contatos__contato img {
+        width: 80%;
+    }
+
+    .curriculo__experiencias__experiencia {
+        gap: 10px 0;   
+        padding-bottom: 20px;
+    }
+
+    .curriculo__experiencias__experiencia__titulo,
+    .curriculo__formacao__titulo,
+    .curriculo__tecnologias__titulo {
+        font-size: 24px;
+    }
+
+    .curriculo__experiencias__experiencia__gif,
+    .curriculo__experiencias__experiencia__imagem {
+        width: 70%;
+    }
+
+    .curriculo__experiencias__experiencia__teste {
+        width: 30%;
+    }
+
+    .curriculo__experiencias__experiencia__projeto, 
+    .curriculo__experiencias__experiencia__projeto, 
+    .curriculo__experiencias__experiencia__descricao, 
+    .curriculo__experiencias__experiencia__data, 
+    .curriculo__formacao__projeto,
+    .curriculo__formacao__descricao,
+    .curriculo__formacao__data {
+        font-size: 20px;
+    }
+
+    .curriculo__experiencias__experiencia__video {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .curriculo {
+        padding: 11% 5%;
+    }
+
+    .curriculo__informacoes__nome {
+        font-size: 26px;
+    }
+
+    .curriculo__informacoes__cargo, 
+    .curriculo__informacoes__cidade,
+    .curriculo__informacoes__contato,
+    .curriculo__experiencias__experiencia__subtitulo {
+        font-size: 20px;
+    }
+
+    .curriculo__informacoes__contatos__contato img {
+        width: 80%;
+    }
+
+    .curriculo__informacoes__foto {
+        display: none;
+    }
+
+    .curriculo__experiencias__experiencia__titulo,
+    .curriculo__formacao__titulo,
+    .curriculo__tecnologias__titulo {
+        font-size: 24px;
+    }
+
+    .curriculo__experiencias__experiencia__projeto, 
+    .curriculo__experiencias__experiencia__projeto, 
+    .curriculo__experiencias__experiencia__descricao, 
+    .curriculo__experiencias__experiencia__data, 
+    .curriculo__formacao__projeto,
+    .curriculo__formacao__descricao,
+    .curriculo__formacao__data {
+        font-size: 20px;
+    }
+
+    .curriculo__experiencias__experiencia {
+        gap: 10px 0;   
+        padding-bottom: 20px;
+    }
+
+    .curriculo__experiencias__experiencia__gif,
+    .curriculo__experiencias__experiencia__imagem {
+        width: 100%;
+    }
+
+    .curriculo__experiencias__experiencia__video {
+        width: 100%;
+    }
+}
